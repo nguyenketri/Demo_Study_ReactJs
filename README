@@ -2,4 +2,6 @@ REact phạm vi sử dụng local, global  : scope
 Kiểu data follow value of variable
 let,const scope block use in function, for , if else { block } chỉ dùng khi gọi hàm khi ra block ko còn nữa
 
+* The journey, I learn about ReactJs if help me more skill about funtion, hook, prop, destructuring, ...
+
  
