@@ -1,0 +1,12 @@
+{
+  "name": "code_demore",
+  "version": "1.0.0",
+  "description": "REact phạm vi sử dụng local, global  : scope\r Kiểu data follow value of variable\r let,const scope block use in function, for , if else { block } chỉ dùng khi gọi hàm khi ra block ko còn nữa",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

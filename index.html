@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease-in-out;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 999;
+  padding: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+  <ul>
+    <li><a href="#">Trang chủ</a></li>
+    <li><a href="#">Sản phẩm</a></li>
+    <li><a href="#">Liên hệ</a></li>
+  </ul>
+</div>
+
+<div class="content">
+    <!-- Nội dung dài để kiểm tra cuộn -->
+    <section><h2>Giới thiệu</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec.</p></section>
+    <section><h2>Sản phẩm</h2><p>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.</p></section>
+    <section><h2>Dịch vụ</h2><p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p></section>
+    <section><h2>Khách hàng</h2><p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.</p></section>
+    <section><h2>Liên hệ</h2><p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p></section>
+    <!-- Lặp lại để tạo độ dài trang -->
+    <section><h2>Giới thiệu</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec.</p></section>
+    <section><h2>Sản phẩm</h2><p>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.</p></section>
+    <section><h2>Dịch vụ</h2><p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p></section>
+    <section><h2>Khách hàng</h2><p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.</p></section>
+    <section><h2>Liên hệ</h2><p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p></section>
+     <section><h2>Giới thiệu</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec.</p></section>
+    <section><h2>Sản phẩm</h2><p>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.</p></section>
+    <section><h2>Dịch vụ</h2><p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p></section>
+    <section><h2>Khách hàng</h2><p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.</p></section>
+    <section><h2>Liên hệ</h2><p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p></section>
+    <!-- Lặp lại để tạo độ dài trang -->
+    <section><h2>Giới thiệu</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec.</p></section>
+    <section><h2>Sản phẩm</h2><p>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.</p></section>
+    <section><h2>Dịch vụ</h2><p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p></section>
+    <section><h2>Khách hàng</h2><p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.</p></section>
+    <section><h2>Liên hệ</h2><p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p></section>
+</div>
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function () {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Cuộn xuống → Ẩn navbar
+      navbar.style.top = "-100px";
+    } else {
+      // Cuộn lên → Hiện lại navbar
+      navbar.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Không cho giá trị âm
+  });
+</script>
+
+</body>
+</html>
