@@ -3,13 +3,13 @@ import Home from "./component/Home.js"
 import Body from "./component/Body.js";
 import { useContext } from "react";
 import { themConT } from "./component/Context.js";
+import FetchApi from "./fetchApi/fetch.js";
 function App() {
     const context = useContext(themConT)
   return(
    <> 
-    <Body/>
-     <button onClick={context.change}>Cick Change</button>
-   </>
+   <FetchApi/>
+    </>
     
     
   )

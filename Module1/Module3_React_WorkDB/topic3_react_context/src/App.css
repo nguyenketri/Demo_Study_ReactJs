@@ -41,3 +41,29 @@
   background-color:black;
   color:white;
 }
+
+.table{
+  width:100%;
+  margin-top: 10px;
+  font-family:Arial;
+  border-collapse:collapse;
+}
+.table th,
+.table td {
+  border:1px solid red;
+  text-align:left;
+  padding: 7px;
+}
+
+.table th{
+  background-color:aliceblue;
+  font-weight: bolder;
+}
+
+.table tr:nth-child(odd){
+  background-color: blue;
+}
+.table tr:hover{
+  background-color: red;
+  cursor:pointer;
+}
